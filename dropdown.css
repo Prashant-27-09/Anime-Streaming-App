@@ -1,0 +1,33 @@
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: gray;
+    font-size: 18px;
+    min-width: 160px;
+    position: absolute;
+    z-index: 10;
+   
+  }
+  .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-bottom: 2px dotted black;
+    
+  }
+  .dropdown-content a:last-child{
+    border-bottom: none;
+  }
+  .dropdown-content:hover ul{
+        display:block;
+  }
+  .dropdown-content a:hover {background-color: rgb(61, 60, 60); width: 170px;}
+  .dropdown:hover .dropdown-content {display: block;}
+  .navbar li:hover
+        {
+            background-color: gray;
+        }
+        tr:hover td:hover a:hover{
+          background-color: yellowgreen;
+      }

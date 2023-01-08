@@ -1,0 +1,47 @@
+<html> 
+ 
+ <head> 
+ <title> Demo HTML Page </title> 
+ </head> 
+ 
+ <body> 
+ <table border=1px height=100% style="text-align:center" bgcolor="cyan" style="margin=0" style="padding=0">
+ <tr>
+  <th>Naruto Episodes</th>
+ </tr>
+ <tr>
+<td> Episode 1</td>
+</tr>
+ <tr>
+<td> Episode 2</td>
+</tr>
+ <tr>
+<td> Episode 3</td>
+</tr>
+ <tr>
+<td> Episode 4</td>
+</tr>
+ <tr>
+<td> Episode 5</td>
+</tr>
+ <tr>
+<td> Episode 6</td>
+</tr>
+ <tr>
+<td> Episode 7</td>
+</tr>
+ <tr>
+<td> Episode 8</td>
+</tr>
+ <tr>
+<td> Episode 9</td>
+</tr>
+ <tr>
+<td> Episode 10</td>
+</tr>
+ 
+ 
+ 
+ </table>
+ </body> 
+</html>

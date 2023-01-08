@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANIMEPOINT.co.in</title>
+    <style>
+        body{
+            background-image: url(402978.jpg);
+            font-family: sans-serif;
+
+        }
+        .box{
+            background-color: aliceblue;
+            height: 400px;
+            width: 300px;
+            position: relative;
+            margin: 6% auto;
+            padding: 5px;
+            overflow: hidden;
+        }
+        .buttonbox{
+            width: 220px;
+            margin: 20px auto;
+            position: relative;
+            border-radius:30px;
+            box-shadow: 0px 0px 10px 5px rgb(180, 178, 178);
+        }
+        .togglebtn{
+        
+            padding: 10px 30px;
+            background: transparent;
+            border: 0;
+            outline: none;
+            position: relative;
+        }
+        #btn{
+            top: 0;
+            left: 0;
+            position: absolute;
+            height: 100%;
+            width: 120px;
+
+            background: linear-gradient(to right,rgb(177, 202, 129),rgb(152, 206, 224));
+            border-radius: 30px;
+            transition: .5s;
+        }
+        .socialicon{
+            display: inline-flex;
+            height: 35px;
+            width: 35px;
+            margin: auto 55px;
+            text-align: center;
+        }
+        .socialicon img{
+            margin: 0px 12px;
+        }
+        .inputgroup{
+            position: absolute;
+            width: 280px;
+            transition: .5s;
+        }
+        .inputfield{
+            width: 100%;
+            padding: 10px 10px;
+            margin: 5px 0px;
+            border-left: 0;
+            border-right: 0;
+            border-top: 0;
+            border-bottom: 1px solid #999;
+            background: transparent;
+            outline: none;
+        }
+        .submitbtn{
+            width: 70%;
+            padding: 10px 10px;
+            background: linear-gradient(to right,rgb(177, 202, 129),rgb(152, 206, 224));
+            margin-left: 50px;
+            border: 0;
+            outline: none;
+            border-radius: 30px;
+        }
+        .check-box{
+            margin: 10px 30px 10px 0px;
+        }
+        span{
+            color: #777;
+            font-size: 12px;
+            bottom: 45px;
+            position: absolute;
+
+        }
+        #login{
+            left: 5px;
+        }
+        #register{
+            left: 350px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box">
+        <div class="buttonbox">
+            <div id="btn"></div>
+        <button class="togglebtn" onclick="login()"> login</button>
+        <button class="togglebtn" onclick="register()"> Register</button>
+    </div>
+    <div class="socialicon">
+        <img src="fb.png" alt="facebook">
+        <img src="insta.png" alt="instagram">
+        <img src="tw.png" alt="twitter">
+    </div>
+    <form id="login" class="inputgroup" action="HomePage.html">
+       
+        <input type="text" class="inputfield" placeholder="Username" required>
+        <input type="password" class="inputfield" placeholder="Password" required>
+        <input type="checkbox" class="check-box"><span>Remember Password</span>
+        <button type="submit" class="submitbtn">Log In</button>
+    </form>
+    <form id="register" class="inputgroup" action="HomePage.html">
+        <input type="email" class="inputfield" placeholder="Email-ID" required>
+        <input type="text" class="inputfield" placeholder="Username" required>
+        <input type="password" class="inputfield" placeholder="Password" required>
+        <input type="checkbox" class="check-box" required><span>I agree to the Terms & Conditions</span>
+        <button type="submit" class="submitbtn">Register</button>
+    </form>
+    </div>
+    <script>
+        var x= document.getElementById("login");
+        var y=document.getElementById("register");
+        var z=document.getElementById("btn");
+
+        function register(){
+            x.style.left="-400px";
+            y.style.left="4px";
+            z.style.left="100px";
+
+        }
+        function login(){
+            x.style.left="4px";
+            y.style.left="400px";
+            z.style.left="0px";
+
+        }
+
+    </script>
+    
+</body>
+</html>
